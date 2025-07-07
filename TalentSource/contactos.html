@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contactos</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: url('o-que-e-paisagem.jpg.webp') no-repeat center center fixed;
+      background-size: cover;
+      transition: background-color 0.3s, color 0.3s;
+      padding-top: 70px;
+    }
+    .carousel-item img {
+      height: 400px;
+      object-fit: cover;
+      width: 100%;
+    }
+    /* Define o modal com fundo branco fixo */
+    .modal-content {
+      background-color: #fff !important;
+      color: #000 !important;
+    }
+
+  </style>
+</head>
+<body class="bg-light text-dark">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top bg-warning">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Contactos</a>
+      <a href="PaginaInicial.html">
+        <img src="newlogo.png" class="rounded-circle" alt="Cinque Terre" width="50" height="50">
+        </a>
+    </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+        <span id="clock" class="navbar-text me-3"></span>
+        <button id="darkModeToggle" class="btn btn-outline-dark btn-sm">Modo Escuro</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Conteúdo Principal -->
+  <main class="container my-4">
+    <header class="text-center mb-4">
+      <h1>Contactos</h1>
+    </header>
+
+    <!-- Carousel -->
+    <div id="lamegoCarousel" class="carousel slide mb-4" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="lamego1.jpg" class="d-block w-100" alt="Lamego 1">
+        </div>
+        <div class="carousel-item">
+          <img src="lamego2.jpg" class="d-block w-100" alt="Lamego 2">
+        </div>
+        <div class="carousel-item">
+          <img src="lamego3.jpg" class="d-block w-100" alt="Lamego 3">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#lamegoCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#lamegoCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+
+    <!-- Cards de Contacto -->
+    <section class="row row-cols-1 row-cols-md-3 g-4 mb-4">
+      <div class="col">
+        <div class="card h-100 text-center bg-light text-dark">
+          <div class="card-body">
+            <h5 class="card-title">Telefone</h5>
+            <p class="card-text fs-4"><strong>📞 254 613 311</strong></p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 text-center bg-light text-dark">
+          <div class="card-body">
+            <h5 class="card-title">Email</h5>
+            <p class="card-text fs-5"><strong>📧 geral.talentsource@gmail.com</strong></p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 text-center bg-light text-dark">
+          <div class="card-body">
+            <h5 class="card-title">Localização</h5>
+            <p class="card-text fs-6">
+              <strong>📍 Praceta Dr. António Manuel Pintado, Bl.16 - R/C<br>5100-078 Lamego</strong>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mapa de Lamego -->
+    <section id="mapa" class="mb-4">
+      <h2 class="text-center mb-4">Localização em Google Maps</h2>
+      <div class="ratio ratio-16x9">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12026.418446497188!2d-7.822056303917938!3d41.09948481135598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd24ad9c7c4d40b9%3A0xe65f26afae9c0a8b!2sJunta%20de%20Freguesia%20de%20Lamego!5e0!3m2!1spt-PT!2spt!4v1743413238510!5m2!1spt-PT!2spt" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+
+    <!-- Botão para abrir Modal -->
+    <div class="text-center">
+      <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactModal">Enviar Mensagem</button>
+    </div>
+  </main>
+
+  <!-- Modal de Envio de Mensagem -->
+  <div class="modal fade" id="contactModal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content bg-light text-dark">
+        <form class="needs-validation" novalidate>
+          <div class="modal-header">
+            <h5 class="modal-title">Enviar Mensagem</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <div class="mb-3">
+              <label class="form-label">Nome</label>
+              <input type="text" class="form-control" required>
+              <div class="invalid-feedback">Por favor, insira o seu nome.</div>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Email</label>
+              <input type="email" class="form-control" required>
+              <div class="invalid-feedback">Por favor, insira um email válido.</div>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Mensagem</label>
+              <textarea class="form-control" rows="3" required></textarea>
+              <div class="invalid-feedback">Por favor, insira a sua mensagem.</div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Atualiza o relógio na navbar
+      const clock = document.getElementById('clock');
+      function updateClock() {
+        clock.textContent = new Date().toLocaleTimeString();
+      }
+      updateClock();
+      setInterval(updateClock, 1000);
+
+      // Alterna entre Modo Escuro e Claro, mas deixa o modal inalterado
+      document.getElementById('darkModeToggle').addEventListener('click', function() {
+        const body = document.body;
+        const cards = document.querySelectorAll('.card');
+        // Removendo a alteração dos modais para manter o fundo branco
+        if(body.classList.contains('bg-light')) {
+          // Atualiza body
+          body.classList.replace('bg-light', 'bg-dark');
+          body.classList.replace('text-dark', 'text-white');
+          this.textContent = 'Modo Claro';
+          // Atualiza cards
+          cards.forEach(card => {
+            card.classList.remove('bg-light', 'text-dark');
+            card.classList.add('bg-dark', 'text-white');
+          });
+        } else {
+          // Reverte body
+          body.classList.replace('bg-dark', 'bg-light');
+          body.classList.replace('text-white', 'text-dark');
+          this.textContent = 'Modo Escuro';
+          // Reverte cards
+          cards.forEach(card => {
+            card.classList.remove('bg-dark', 'text-white');
+            card.classList.add('bg-light', 'text-dark');
+          });
+        }
+      });
+
+      // Validação dos formulários com Bootstrap
+      const forms = document.querySelectorAll('.needs-validation');
+      Array.from(forms).forEach(form => {
+        form.addEventListener('submit', function(event) {
+          if (!form.checkValidity()) {
+            event.preventDefault();
+            event.stopPropagation();
+          }
+          form.classList.add('was-validated');
+        });
+      });
+    });
+  </script>
+</body>
+</html>

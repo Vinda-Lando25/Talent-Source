@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <title>Página Inicial</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <header class="bg-warning text-white py-3">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md-6">
+                    <img src="newlogo.png" class="rounded-circle" alt="Cinque Terre" width="100" height="100" onclick="location.reload();">
+                </div>
+                <div class="col-md-6 text-end d-flex justify-content-end gap-4">
+                    <a href="quemsomos.html" class="text-primary text-decoration-none fw-bold">Quem Somos</a>
+                    <a href="candidatos.html" class="text-primary text-decoration-none fw-bold">Nossos Candidatos</a>
+                    <a href="nssv.html" class="text-primary text-decoration-none fw-bold">Serviços</a>
+                    <a href="contactos.html" class="text-primary text-decoration-none fw-bold">Contacto</a>
+                    <a href="login.html" class="text-primary text-decoration-none fw-bold">Login/Criar Conta</a>
+                </div>
+            </div>
+        </div>
+    </header>
+                
+    
+
+    <main class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Bem-Vindo à Talent Source</h2>
+            <p class="lead text-center">Seja bem-vindo à nossa plataforma de Recursos Humanos.</p>
+            <div class="row justify-content-center">
+                <div class="col-md-6 text-center">
+                    <video width="560" height="315" autoplay loop muted class="mb-3">
+                        <source src="vdapresentação.mp4" type="video/mp4">
+                    </video>
+                    <br>
+    
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h2 class="fw-bold">Recursos Humanos</h2>
+                <p class="lead text-center">Oferecemos soluções inovadoras para conectar talentos às melhores oportunidades do mercado. Nossa missão é impulsionar carreiras e ajudar empresas a encontrar os profissionais ideais.</p>
+                
+            </div>
+        </div>
+    </div>
+    
+    <div class="container mt-3">
+      <img class="img-fluid" src="ftscollor.avif" alt="New York" width="1500" height="500"> 
+    </div>
+    
+    
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <h3 class="fw-bold text-center">Talentos</h3>
+                <p>Encontre oportunidades que combinam com suas habilidades e experiências. Nossa plataforma oferece suporte completo para que você alcance seus objetivos profissionais.</p>
+                <br>
+                <a href="login.html" class="btn btn-success fw-bold"> Candidatar-me </a>
+            </div>
+    
+            <div class="col-md-6">
+                <h3 class="fw-bold text-center">Para Empresas</h3>
+                <p>Conectamos sua empresa aos melhores talentos do mercado. Conte com nosso suporte para recrutamento, seleção e desenvolvimento de equipes de alto desempenho.</p>
+                <br>
+                <a href="#" class="btn btn-success fw-bold">  Saber Mais</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.querySelector('a[href="login.html"]').addEventListener('click', function(event) {
+            event.preventDefault(); // Previne o comportamento padrão
+            window.location.href = 'login.html'; // Redireciona para a página de login
+        });
+    </script>
+
+    <footer class="bg-dark text-white mt-5">
+        <div class="container text-center" style="padding: 20px 0;">
+            <p>&copy; 2025 Talent Source - Todos os direitos reservados</p>
+        </div>
+    </footer>
+</body>
+</html>
+      

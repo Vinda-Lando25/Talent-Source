@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <title>Página Inicial</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        .carousel-item img {
+            max-height: 500px; /* Ajuste a altura máxima conforme necessário */
+            object-fit: cover; /* Garante que a imagem cubra o espaço mantendo a proporção */
+        }
+        .carousel-caption {
+            background: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente para melhor legibilidade do texto */
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .carousel-caption h5, .carousel-caption p {
+            color: white; /* Garante que o texto seja branco para melhor contraste */
+        }
+    </style>
+</head>
+<body>
+    <header class="bg-warning text-white py-3">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md-6">
+                    <img src="newlogo.png" class="rounded-circle" alt="Cinque Terre" width="100" height="100" onclick="location.reload();">
+                </div>
+                <div class="col-md-6 text-end d-flex justify-content-end gap-4">
+                    <a href="quemsomos.html" class="text-primary text-decoration-none fw-bold">Quem Somos</a>
+                    <a href="candidatos.html" class="text-primary text-decoration-none fw-bold">Nossos Candidatos</a>
+                    <a href="nssv.html" class="text-primary text-decoration-none fw-bold">Serviços</a>
+                    <a href="contactos.html" class="text-primary text-decoration-none fw-bold">Contacto</a>
+                    <a href="login.html" class="text-primary text-decoration-none fw-bold">Login/Criar Conta</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <header class="bg-light py-5 text-center">
+        <div class="container">
+            <h1 class="fw-bold display-4 text-info">Quem Somos</h1>
+            <p class="lead">A Talent Source conecta talentos às melhores oportunidades do mercado.</p>
+        </div>
+    </header>
+
+    <section id="carouselSection" class="container my-5">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="cv.jpg" class="d-block w-100" alt="Análise de Currículos">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Análise de Currículos</h5>
+                        <p>Selecionamos os melhores talentos para cada vaga.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="contratar.jpg" class="d-block w-100" alt="Processo de Contratação">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Processo de Contratação</h5>
+                        <p>Facilitamos a conexão entre candidatos e empresas.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="negociar.jpg" class="d-block w-100" alt="Negociação com Empresas">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Negociação com Empresas</h5>
+                        <p>Garantimos as melhores condições para ambas as partes.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <section class="container my-5">
+        <div class="row">
+            <div class="col-md-4">
+                <h2 class="fw-bold icon-title text-info">Nossa Missão</h2>
+                <p>Nosso compromisso é fornecer soluções inovadoras em recrutamento e seleção, ajudando empresas a encontrarem os melhores profissionais e auxiliando talentos a conquistarem suas carreiras ideais.</p>
+            </div>
+            <div class="col-md-4">
+                <h2 class="fw-bold icon-title text-danger">Nossa Visão</h2>
+                <p>Ser referência no mercado, conectando talentos a oportunidades ideais e impulsionando o sucesso de empresas e profissionais.</p>
+            </div>
+            <div class="col-md-4">
+                <h2 class="fw-bold icon-title text-info">Nossos Valores</h2>
+                <ul>
+                    <li>Ética e Transparência</li>
+                    <li>Compromisso com o Cliente</li>
+                    <li>Inovação Contínua</li>
+                    <li>Excelência Profissional</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="bg-primary text-white py-5 text-center">
+        <div class="container">
+            <h2>Por que escolher a Talent Source?</h2>
+            <p>Com anos de experiência no mercado, utilizamos tecnologia e expertise para otimizar o recrutamento e oferecer as melhores oportunidades para talentos e empresas.</p>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2025 Talent Source - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
